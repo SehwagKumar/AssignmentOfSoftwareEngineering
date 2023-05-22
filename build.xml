@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Compile And Run With Ant">
+<target name="run" depends="compile">
+	<java classname="Test\Test">
+		<classpath path="Stagging"/>
+	</java>
+
+</target>
+<target name="compile">
+	<javac includeantruntime="false" srcdir="./src" destdir="Stagging" />
+
+</target>
+</project>
